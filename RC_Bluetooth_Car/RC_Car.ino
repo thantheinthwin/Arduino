@@ -19,17 +19,6 @@ void setup() {
 void loop() {
   int xAxis = analogRead(A0); // Read Joysticks X-axis
   int yAxis = analogRead(A1); // Read Joysticks Y-axis
-  // Y-axis used for forward and backward control
-//  
-//  Serial.print("X-axis: ");
-//  Serial.print(analogRead(xAxis));
-//  Serial.print("\n");
-//  Serial.print("Y-axis: ");
-//  Serial.println(analogRead(yAxis));
-//  Serial.print("\n");
-//  Serial.print("conValue: ");
-//  Serial.print(conValue/2);
-//  Serial.print("\n\n");
   
   if (yAxis < 470) {
     // Set Motor A backward
